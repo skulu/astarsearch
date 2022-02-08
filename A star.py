@@ -7,18 +7,6 @@
 # the function will return the string 'fail'
 # ----------
 
-# grid = [[0, 1, 0, 0, 0, 0],
-#         [0, 1, 0, 0, 0, 0],
-#         [0, 1, 0, 0, 0, 0],
-#         [0, 1, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 1, 0]]
-
-# heuristic = [[9, 8, 7, 6, 5, 4],
-#              [8, 7, 6, 5, 4, 3],
-#              [7, 6, 5, 4, 3, 2],
-#              [6, 5, 4, 3, 2, 1],
-#              [5, 4, 3, 2, 1, 0]]
-
 grid = [[0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0],
         [0, 0, 1, 0, 0],
@@ -43,9 +31,6 @@ delta = [[-1, 0 ], # go up
 delta_name = ['^', '<', 'v', '>']
 
 def search(grid,init,goal,cost,heuristic):
-    # ----------------------------------------
-    # modify the code below
-    # ----------------------------------------
     closed = [[0 for col in range(len(grid[0]))] for row in range(len(grid))]
     closed[init[0]][init[1]] = 1
 
