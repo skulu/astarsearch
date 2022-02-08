@@ -1,4 +1,5 @@
 # A * Search Algorithm
+An implementation of this is given in the file `A star.py`
 
 ## Introduction
 You  would like to plan the path for a robot to move from point A to B. Given a map of the space, how would you find your path?
